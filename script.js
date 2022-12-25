@@ -6,10 +6,9 @@ var serverUrl = "https://api.funtranslations.com/translate/doge.json";
 function funtranslations(input){
     return  serverUrl + "?" + "text=" + input;
 }
-
 function errorHandler(error){
-  console.log("error occured = " + error);
-    alert("error occured!! server is busy right now please try again after sometime");   
+    console.log("error occured = "+error)
+    alert("error occured!! server is busy right now please try again after sometime");
 }
 btn.addEventListener("click",function clickhandler(){
      
